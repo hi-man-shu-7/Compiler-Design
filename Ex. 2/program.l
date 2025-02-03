@@ -15,6 +15,7 @@ int|main|return|if|then|begin|end|procedure|function { printf("A keyword: %s\n",
 "+"|"-"|"*"|"/"         { printf("An operator: %s\n", yytext); }
 "//".*                  { /* Eat up one-line comments */ }
 [ \t\n]+                { /* Eat up whitespace */ }
+,|;                     {printf("special symbols: %s\n", yytext);}
 .                       { printf("Unrecognized character: %s\n", yytext); }
 %%
 
