@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 // create a class
 class Room {
 
